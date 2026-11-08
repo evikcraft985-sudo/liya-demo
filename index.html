@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Liya, ювелирная студия в Ростове-на-Дону: дизайн украшений, ремонт и гравировка. Интерактивное 3D-кольцо, отзывы и контакты.">
+  <title>Liya — ювелирная студия в Ростове-на-Дону</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/fonts/fonts.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/page.css">
+  <script type="importmap">
+    {"imports":{"three":"./vendor/three.module.min.js","three/addons/":"./vendor/addons/"}}
+  </script>
+  <script type="module" src="./assets/js/main.js"></script>
+</head>
+<body data-theme="jewelry">
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="Liya, главная">
+      <span class="brand-mark">L</span>
+      <span>Liya</span>
+    </a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#atelier">Мастерская</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="header-phone" href="tel:+79181234544">+7 918 123-45-44</a>
+  </header>
+
+  <main id="main" class="page-main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Ювелирная студия · Ростов-на-Дону</p>
+        <h1 class="display" id="hero-title">Искусство<br><em>в деталях.</em></h1>
+        <p class="hero-lede">Дизайн украшений, ремонт и гравировка. А здесь можно рассмотреть кольцо крупным планом, выбрать металл и камень и подготовить идею для разговора с мастером.</p>
+        <div class="button-row">
+          <a class="button" href="https://t.me/zorik_juweler" target="_blank" rel="noopener">Обсудить в Telegram <span aria-hidden="true">↗</span></a>
+          <button class="button button-secondary" type="button" data-scroll-to="#atelier">Выбрать материалы <span aria-hidden="true">↓</span></button>
+        </div>
+        <ul class="hero-facts">
+          <li>Дизайн украшений</li>
+          <li>Ремонт и восстановление</li>
+          <li>Гравировка</li>
+        </ul>
+      </div>
+
+      <div class="scene-shell" id="atelier" data-scene="jewelry" data-scene-state="loading">
+        <div class="scene-viewport" data-scene-viewport>
+          <div class="scene-poster" style="--poster-bg:#241b1d" role="img" aria-label="Золотое кольцо с камнем, статичная версия">
+            <svg viewBox="0 0 800 600" aria-hidden="true">
+              <ellipse cx="400" cy="510" rx="210" ry="42" fill="#4b3737"/>
+              <ellipse cx="400" cy="352" rx="130" ry="160" fill="none" stroke="#d6aa55" stroke-width="38"/>
+              <path d="M316 216 L292 266 M484 216 L508 266" stroke="#d6aa55" stroke-width="16" stroke-linecap="round"/>
+              <polygon points="400,68 479,142 443,232 357,232 321,142" fill="#d9efff"/>
+              <polygon points="400,68 400,232 357,232 321,142" fill="#aacfe4"/>
+              <polygon points="400,68 479,142 400,160" fill="#f5fcff"/>
+              <polygon points="321,142 400,160 357,232" fill="#c2e2f2"/>
+              <g fill="#fff8df">
+                <polygon points="248,135 256,158 279,166 256,174 248,197 240,174 217,166 240,158"/>
+                <polygon points="554,239 560,257 578,263 560,269 554,287 548,269 530,263 548,257"/>
+              </g>
+            </svg>
+          </div>
+          <span class="scene-loading">Загружаем кольцо…</span>
+        </div>
+        <div class="scene-toolbar">
+          <div class="control-stack">
+            <span class="control-label" id="metal-label">Металл</span>
+            <div class="swatches" role="group" aria-labelledby="metal-label">
+              <button class="swatch" type="button" style="--swatch:#d6aa55" data-metal="gold" aria-pressed="true" aria-label="Жёлтое золото" title="Жёлтое золото"></button>
+              <button class="swatch" type="button" style="--swatch:#d58f7f" data-metal="rose" aria-pressed="false" aria-label="Розовое золото" title="Розовое золото"></button>
+              <button class="swatch" type="button" style="--swatch:#d9dde2" data-metal="white" aria-pressed="false" aria-label="Белое золото" title="Белое золото"></button>
+            </div>
+          </div>
+          <div class="control-stack">
+            <span class="control-label" id="gem-label">Камень</span>
+            <div class="swatches" role="group" aria-labelledby="gem-label">
+              <button class="swatch" type="button" style="--swatch:#d9efff" data-gem="diamond" aria-pressed="true" aria-label="Бриллиант" title="Бриллиант"></button>
+              <button class="swatch" type="button" style="--swatch:#15946c" data-gem="emerald" aria-pressed="false" aria-label="Изумруд" title="Изумруд"></button>
+              <button class="swatch" type="button" style="--swatch:#b62e48" data-gem="ruby" aria-pressed="false" aria-label="Рубин" title="Рубин"></button>
+              <button class="swatch" type="button" style="--swatch:#3159ad" data-gem="sapphire" aria-pressed="false" aria-label="Сапфир" title="Сапфир"></button>
+            </div>
+          </div>
+          <div class="control-group">
+            <button class="icon-button" type="button" data-motion aria-pressed="true">Пауза</button>
+            <button class="icon-button" type="button" data-reset-camera>Сбросить вид</button>
+          </div>
+          <p class="scene-status" data-scene-status aria-live="polite">Меняйте материалы и вращайте кольцо.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-bar" aria-label="Сведения о студии">
+      <span><strong>5,0 на 2ГИС</strong> · отзывы клиентов</span>
+      <span>Проспект Ленина, 113 · Ростов-на-Дону</span>
+      <span>Понедельник–пятница 10:00–20:00</span>
+    </div>
+
+    <section class="content-section" id="services" aria-labelledby="services-title">
+      <div class="section-heading">
+        <p class="eyebrow">Услуги студии</p>
+        <div>
+          <h2 id="services-title">От новой идеи<br>до восстановления любимого.</h2>
+          <p>Каждая задача начинается с разговора и осмотра изделия. Мастер подскажет возможное решение, материалы и следующие шаги.</p>
+        </div>
+      </div>
+      <div class="category-grid">
+        <article class="category-item"><span>01</span><h3>Дизайн украшений</h3><p>Обсуждение формы, материалов и деталей будущего изделия.</p></article>
+        <article class="category-item"><span>02</span><h3>Изготовление на заказ</h3><p>Воплощение согласованной идеи в украшении с вашим характером.</p></article>
+        <article class="category-item"><span>03</span><h3>Ремонт украшений</h3><p>Восстановление цепочек, серёг и других изделий после осмотра.</p></article>
+        <article class="category-item"><span>04</span><h3>Чистка и восстановление</h3><p>Возвращение блеска и аккуратного вида любимым вещам.</p></article>
+        <article class="category-item"><span>05</span><h3>Гравировка</h3><p>Дата, имя или личная надпись — детали согласовываются с мастером.</p></article>
+        <article class="category-item"><span>06</span><h3>Советы по уходу</h3><p>Рекомендации по ношению и хранению украшений после работы.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="process-title">
+      <div class="split-feature">
+        <figure>
+          <img class="real-photo" src="./assets/images/showroom.jpg" alt="Комплект серебряных украшений с тёмно-синими камнями" width="1440" height="1440" loading="lazy">
+          <figcaption class="photo-caption">Фото из публичного альбома Liya на 2ГИС</figcaption>
+        </figure>
+        <div class="feature-copy">
+          <p class="eyebrow">Как начать</p>
+          <h2 id="process-title">Сначала — показать изделие или идею.</h2>
+          <p>Можно принести украшение в студию или начать с фотографии в Telegram. Мастер уточнит детали и скажет, что возможно сделать.</p>
+          <ol class="process-list">
+            <li><div><strong>Опишите задачу</strong><p>Новое изделие, ремонт, чистка или гравировка.</p></div></li>
+            <li><div><strong>Согласуйте решение</strong><p>Материалы, детали, стоимость и сроки после оценки мастера.</p></div></li>
+            <li><div><strong>Получите рекомендации</strong><p>Готовое изделие и советы по дальнейшему уходу.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="reviews" aria-labelledby="reviews-title">
+      <div class="section-heading">
+        <p class="eyebrow">Отзывы на 2ГИС</p>
+        <div><h2 id="reviews-title">Клиенты о работе мастера.</h2></div>
+      </div>
+      <div class="review-grid">
+        <figure class="review-card">
+          <blockquote>«Очень классная мастерская. Спасибо большое за оперативность по починке серебра. Очень вежливый и аккуратный персонал»</blockquote>
+          <figcaption><span>Кристина Погосян</span><a href="https://2gis.ru/rostov-on-don/firm/70000001093530309/tab/reviews" target="_blank" rel="noopener">Источник: 2ГИС ↗</a></figcaption>
+        </figure>
+        <figure class="review-card">
+          <blockquote>«Мастер Зорик великолепно решил проблему поломанной цепочки, а серьги как новые блестят. Работа была проведена очень качественная»</blockquote>
+          <figcaption><span>Алиса Теслина</span><a href="https://2gis.ru/rostov-on-don/firm/70000001093530309/tab/reviews" target="_blank" rel="noopener">Источник: 2ГИС ↗</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <p class="eyebrow">Перед обращением</p>
+        <div><h2 id="faq-title">Частые вопросы.</h2></div>
+      </div>
+      <div class="faq-list">
+        <details><summary>Можно ли отремонтировать серебряное украшение?</summary><p>Да, в отзывах клиенты упоминают ремонт серебра, цепочек и серёг. Возможность и способ восстановления конкретного изделия мастер определит после осмотра.</p></details>
+        <details><summary>Делаете ли вы гравировку?</summary><p>Гравировка указана в услугах студии на 2ГИС. Текст, место и возможность нанесения на конкретное изделие согласуйте с мастером.</p></details>
+        <details><summary>Как обсудить новое украшение?</summary><p>Напишите в Telegram или позвоните. Пришлите референсы и опишите, что вам нравится. Если есть старое изделие, которое нужно оценить, приложите несколько чётких фотографий.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-panel" id="contacts" aria-labelledby="contacts-title">
+      <div>
+        <p class="eyebrow">Ювелирная студия на Ленина</p>
+        <h2 id="contacts-title">Обсудим<br>вашу идею.</h2>
+        <p>Напишите мастеру в Telegram или позвоните. Для оценки ремонта приложите фотографию изделия крупным планом.</p>
+        <div class="button-row">
+          <a class="button" href="https://t.me/zorik_juweler" target="_blank" rel="noopener">Написать в Telegram <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://wa.me/79181234544" target="_blank" rel="noopener">WhatsApp <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <dl class="contact-methods">
+        <div class="contact-method"><dt>Телефон</dt><dd><a href="tel:+79181234544">+7 918 123-45-44</a></dd></div>
+        <div class="contact-method"><dt>Адрес</dt><dd>Проспект Ленина, 113, Ростов-на-Дону</dd></div>
+        <div class="contact-method"><dt>Будни</dt><dd>10:00–20:00</dd></div>
+        <div class="contact-method"><dt>Выходные</dt><dd>Суббота и воскресенье — выходной</dd></div>
+        <div class="contact-method"><dt>Маршрут</dt><dd><a href="https://2gis.ru/rostov-on-don/firm/70000001093530309" target="_blank" rel="noopener">Открыть в 2ГИС ↗</a></dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="demo-note">Демонстрационный макет для переговоров. Не официальный сайт Liya. Контакты, услуги, фото и отзывы — из публичной карточки компании на 2ГИС.</span>
+    <a href="https://2gis.ru/rostov-on-don/gallery/firm/70000001093530309" target="_blank" rel="noopener">Источник фото ↗</a>
+  </footer>
+</body>
+</html>
